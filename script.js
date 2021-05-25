@@ -4,3 +4,10 @@ changeH1()
 // EX8.: Write a function to change the page background color
 const changePageBackgroundColor = () => document.body.style.backgroundColor = "#00bcd4"
 changePageBackgroundColor()
+// EX9.: Write a function to change the footer address with a fake one
+const changeAddres = () => {
+    let footerParagraphs = document.querySelectorAll("footer>section>p");
+    footerParagraphs[1].innerText = "High Heaven"
+    footerParagraphs[2].innerText = "777"
+}
+changeAddres()
