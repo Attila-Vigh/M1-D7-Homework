@@ -52,6 +52,18 @@ const changeBackgroundColor = () => {
 }
 changeBackgroundColor()
 
+const changeBackgroundColor2 = () => {
+    let trs = document.querySelectorAll("tr")
+    
+    for (const tr of trs) {
+        
+        tr.addEventListener( 'click', () => {                                   // the onclick property/attribute si replaced with calling the addEventListener() method
+            tr.style.backgroundColor = "#" +  Math.floor(Math.random()*16777215).toString(16)        
+        })
+    }
+}
+changeBackgroundColor2()
+
 
 
 
