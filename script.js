@@ -64,6 +64,16 @@ const changeBackgroundColor2 = () => {
 }
 changeBackgroundColor2()
 
+const changeBackgroundColor3 = () => {
+    let trs = document.querySelectorAll("tr") 
+
+    trs.forEach( tr => {                                                        // I use the forEach() method to loop through the list and givs the elemments/objects(table rows) of the list, ono by one as a parameter for an arrow function
+        tr.addEventListener( 'click', () => {  
+            tr.style.backgroundColor = "#" +  Math.floor(Math.random()*16777215).toString(16)        
+    })})
+}
+changeBackgroundColor3()
+
 
 
 
