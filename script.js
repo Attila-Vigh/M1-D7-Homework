@@ -39,6 +39,19 @@ addToggleClassToImageOnAllImages()
 
 // EX12: Write a function totr the price of each product in a different one every time it's invoked
 
+const changeBackgroundColor = () => {
+    let trs = document.querySelectorAll("tr")                                   // Get the list of table rows
+
+    for (const tr of trs) {                                                     // Loop over the list / Get the items from the list one by one
+    
+        tr.onclick = function () {                                              // Each object (table row) from the list has a property/attribute onclick, whichi will receive the value of a function 
+            let color = "#" +  Math.floor(Math.random()*16777215).toString(16)  // Assign/create a random color
+            tr.style.backgroundColor = color                                    // Acces the backgrond color on the object (table row) and assign to it the random color 
+        }
+    }                                                                           // Get the next object (table row) from the list until the list is empty
+}
+changeBackgroundColor()
+
 
 
 
