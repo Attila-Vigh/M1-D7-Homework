@@ -11,3 +11,10 @@ const changeAddres = () => {
     footerParagraphs[2].innerText = "777"
 }
 changeAddres()
+// EX10.: Write a function to add a CSS class to every Amazon link
+const addClassTOAmazonLinks = () => (
+    document.querySelectorAll("a").forEach( 
+        link => link.classList.add("amazon") 
+    )
+)
+addClassTOAmazonLinks()
