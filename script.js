@@ -74,6 +74,9 @@ const changeBackgroundColor3 = () => {
 }
 changeBackgroundColor3()
 
+//? Sometimes you get lucky and everthing can get intr-o singel line of code without ";" or {}
+const changeBackgroundColor4 = () => document.querySelectorAll("tr").forEach(  tr => tr.onclick = () => tr.style.backgroundColor = "#" +  Math.floor(Math.random()*16777215).toString(16)  ) 
+changeBackgroundColor4()
 
 
 
