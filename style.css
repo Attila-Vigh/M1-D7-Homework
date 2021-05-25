@@ -1,6 +1,13 @@
+.amazon {
+    color: red;
+}
 img {
     width: 300px;
 }
 .image {
-    visibility: none;
+    visibility   : visible;
+    padding      : 4px;
+    border       : 1px solid black;
+    border-radius: 6px;
+    margin       : 1px;
 }
