@@ -18,3 +18,11 @@ const addClassTOAmazonLinks = () => (
     )
 )
 addClassTOAmazonLinks()
+// EX11: Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image
+const toggleClasses = () => {
+    let images = document.querySelectorAll("img")
+    for (const image of images) {
+        image.classList.toggle("image")        
+    }
+}
+toggleClasses()
